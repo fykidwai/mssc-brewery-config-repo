@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: beer_service    password: '{cipher}69d16416fbfa8ad310645c8277a09019b0e64d0ba0f1b9f82f005dabeae2c39c'
+    url: jdbc:mysql://192.168.99.101:3306/beerservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+
+# defaults for docker image - vromero/activemq-artemis
+  artemis:
+    host: 192.168.99.101
+    user: artemis
+    password: '{cipher}0482a8251aeb7deb4931c8bf6d94a3f76af71423a07caf09b7b1205fe20a7bc6'
+# Enable logging for config troubleshooting
+#logging:
+#  level:
+#    com:
+#      zaxxer:
+#        hikari:
+#          HikariConfig: DEBUG
+#    org:
+#      hibernate:
+#        SQL: DEBUG
+#        type:
+#          descriptor:
+#            sql:
+#              BasicBinder: TRACE
